@@ -10,13 +10,13 @@ import plotly.express as px
 # 1. PAGE CONFIGURATION & STYLING
 # ==========================================
 st.set_page_config(
-    page_title="Tox21 AI Predictor",
+    page_title="Toxicity Predictor AI",
     page_icon="🧪",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Modern Responsive CSS (Fixes the invisible text issue)
+# Modern Responsive CSS (Fixed Title Visibility)
 st.markdown("""
     <style>
     /* Clean up the main container padding */
@@ -40,13 +40,11 @@ st.markdown("""
         transform: translateY(-2px);
     }
     
-    /* Make the title pop */
+    /* Safely style the title so emojis stay visible */
     h1 {
-        background: -webkit-linear-gradient(45deg, #1f77b4, #00d4ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: 'Helvetica Neue', sans-serif;
-        font-weight: 800;
+        color: #1f77b4 !important;
+        font-family: 'Helvetica Neue', sans-serif !important;
+        font-weight: 800 !important;
     }
     </style>
 """, unsafe_allow_html=True)
