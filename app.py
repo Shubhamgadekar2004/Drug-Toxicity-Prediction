@@ -78,9 +78,9 @@ def get_ultimate_features(smiles):
 # ==========================================
 # 4. DASHBOARD UI
 # ==========================================
-st.title("🧪 Tox21 AI Toxicity Predictor")
+st.title("Toxicity Predictor")
 st.markdown("""
-    Welcome to the **Tox21 Advanced Machine Learning Dashboard**. 
+    Welcome to the **Advanced Machine Learning Dashboard**. 
     Enter a chemical SMILES string below to calculate its physicochemical properties and predict its risk across 12 different biological pathways using our fine-tuned XGBoost ensemble.
 """)
 
